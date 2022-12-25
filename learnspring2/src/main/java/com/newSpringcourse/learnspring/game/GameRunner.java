@@ -1,15 +1,20 @@
 package com.newSpringcourse.learnspring.game;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
 public class GameRunner {
-	//MarioGame game;
-	// private SuperContraGame game; instead of this lets make it use gamng console for loose coupling
+	
 	private GamingConsole game;
-	public GameRunner(GamingConsole game) {
+	public GameRunner(@Qualifier("superContraGame")GamingConsole game) {
+		// or @Qualifier("SuperContraGameQualifier") both work
+		// Bean name with small letter.
 		this.game =game;
 		
 	}
 	public void run() {
-		// TODO Auto-generated method stub
+		
 		System.out.println("Runnintg Game "+ game);
 		game.up();
 		game.down();

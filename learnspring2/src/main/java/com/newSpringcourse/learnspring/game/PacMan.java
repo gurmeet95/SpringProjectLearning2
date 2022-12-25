@@ -1,5 +1,8 @@
 package com.newSpringcourse.learnspring.game;
 
+import org.springframework.stereotype.Component;
+
+@Component   //Now instance of this Pacman class will be create by Spring for us.
 public class PacMan implements GamingConsole{
 
 	@Override
