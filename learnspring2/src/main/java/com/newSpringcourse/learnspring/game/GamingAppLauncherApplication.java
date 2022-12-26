@@ -1,10 +1,5 @@
-package com.newSpringcourse.learnspring;
+package com.newSpringcourse.learnspring.game;
 
-import com.newSpringcourse.learnspring.game.GameRunner;
-import com.newSpringcourse.learnspring.game.GamingConsole;
-import com.newSpringcourse.learnspring.game.MarioGame;
-import com.newSpringcourse.learnspring.game.PacMan;
-import com.newSpringcourse.learnspring.game.SuperContraGame;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
